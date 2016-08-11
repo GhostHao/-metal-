@@ -4,12 +4,12 @@ cls
 :menu
 echo.
 echo.
-echo.                        E.½â°ünew.dat
-echo.                        0.ÁË½âË¢Èë
-echo.                        1.¼ì²âÊÇ·ñÁ¬½ÓÄãµÄÁËÊÖ»ú               
-echo.                        2.°²×°KingrootºÍ¾»»¯´óÊ¦£¬°´²½Öè½øĞĞ¿¨root£¨Ë¢ÁË¾ìÁµÑôÑôµÄ¿ÉÒÔÌø¹ı£©
-echo.                        3.×¼±¸¸´ÖÆÎÄ¼ş
-echo.                        4.×¼±¸½øÈëË¢»ú½çÃæ
+echo.                        E.è§£åŒ…new.dat
+echo.                        0.äº†è§£åˆ·å…¥
+echo.                        1.æ£€æµ‹æ˜¯å¦è¿æ¥ä½ çš„äº†æ‰‹æœº               
+echo.                        2.å®‰è£…Kingrootå’Œå‡€åŒ–å¤§å¸ˆï¼ŒæŒ‰æ­¥éª¤è¿›è¡Œå¡rootï¼ˆåˆ·äº†çœ·æ‹é˜³é˜³çš„å¯ä»¥è·³è¿‡ï¼‰
+echo.                        3.å‡†å¤‡å¤åˆ¶æ–‡ä»¶
+echo.                        4.å‡†å¤‡è¿›å…¥åˆ·æœºç•Œé¢
 
 set /p choice=
 
@@ -53,9 +53,9 @@ cls
 echo.
 echo.
 echo.
-echo.              7.Ê¹ÓÃdataÀïµÄbusybox½øĞĞË¢»ú£¨¿¨root£©
-echo.              8.Ö±½ÓË¢Èësystem£¨¸ĞĞ»¾ìÁµÑôÑôµÄsystem£©  
-echo.              9.³ö´íÁË£¿ÔõÃ´°ì£¿
+echo.              7.ä½¿ç”¨dataé‡Œçš„busyboxè¿›è¡Œåˆ·æœºï¼ˆå¡rootï¼‰
+echo.              8.ç›´æ¥åˆ·å…¥systemï¼ˆæ„Ÿè°¢çœ·æ‹é˜³é˜³çš„systemï¼‰  
+echo.              9.å‡ºé”™äº†ï¼Ÿæ€ä¹ˆåŠï¼Ÿ
            
 set /p choice=
 
@@ -67,7 +67,7 @@ if /i "%choice%"=="9" goto K
 cls
 adb\adb shell %su %/data/local/tmp/busybox dd if=/sdcard/system.img of=/dev/block/platform/mtk-msdc.0/by-name/system
 adb\adb reboot
-echo.¹§Ï²Íê³É
+echo.æ­å–œå®Œæˆ
 PAUSE
 exit
 :F
@@ -75,7 +75,7 @@ cls
 adb\adb shell %su %dd if=/sdcard/system.img of=/dev/block/platform/mtk-msdc.0/by-name/system
 adb\adb reboot
 
-echo.¹§Ï²Íê³É
+echo.æ­å–œå®Œæˆ
 PAUSE
 exit
 
@@ -89,8 +89,8 @@ goto flash
 cls
 echo.
 echo.
-echo.          5.°²×°Kingroot
-echo.          6.°²×°Kingmaster     
+echo.          5.å®‰è£…Kingroot
+echo.          6.å®‰è£…Kingmaster     
  
 set /p choice=
 
